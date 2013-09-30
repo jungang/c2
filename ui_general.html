@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+	<meta charset="utf-8" />
+	<title>个人工作台 | 元素设计 - General</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+	<link href="assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/style-metro.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+	<link href="assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+	<!-- END GLOBAL MANDATORY STYLES -->
+	<!-- BEGIN PAGE LEVEL STYLES -->
+	<link href="assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" type="text/css"/>
+	<!-- END PAGE LEVEL STYLES -->
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed">
+	<!-- BEGIN HEADER -->   
+	<div class="header navbar navbar-inverse navbar-fixed-top">
+		<!-- BEGIN TOP NAVIGATION BAR -->
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<!-- BEGIN LOGO -->
+				<a class="brand" href="index.html">
+				<img src="assets/img/logo.png" alt="logo" />
+				</a>
+				<!-- END LOGO -->
+				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+				<a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+				<img src="assets/img/menu-toggler.png" alt="" />
+				</a>          
+				<!-- END RESPONSIVE MENU TOGGLER -->            
+				<!-- BEGIN TOP NAVIGATION MENU -->              
+				<ul class="nav pull-right">
+					<!-- BEGIN NOTIFICATION DROPDOWN -->   
+					<li class="dropdown" id="header_notification_bar">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<i class="icon-warning-sign"></i>
+						<span class="badge">6</span>
+						</a>
+						<ul class="dropdown-menu extended notification">
+							<li>
+								<p>你有 14 个新通知</p>
+							</li>
+							<li>
+								<ul class="dropdown-menu-list scroller" style="height:250px">
+									<li>
+										<a href="#">
+										<span class="label label-success"><i class="icon-plus"></i></span>
+										新用户<骏马之纲>注册。
+										<span class="time">刚才</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-important"><i class="icon-bolt"></i></span>
+										商务中心服务器重载
+										<span class="time">15 分钟</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-warning"><i class="icon-bell"></i></span>
+										商务中心服务器长时间未响应。
+										<span class="time">22 分钟</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-info"><i class="icon-bullhorn"></i></span>
+										web发发消息接口报错。
+										<span class="time">40 分钟</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-important"><i class="icon-bolt"></i></span>
+										数据库超载68％。 
+										<span class="time">2 小时</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-important"><i class="icon-bolt"></i></span>
+										2个欺诈嫌疑用户IP封锁。
+										<span class="time">5 小时</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-warning"><i class="icon-bell"></i></span>
+										日志存储服务器没有响应。
+										<span class="time">45 分钟</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-info"><i class="icon-bullhorn"></i></span>
+										页面脚本报错。
+										<span class="time">55 分钟</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-important"><i class="icon-bolt"></i></span>
+										数据库超载68％。 
+										<span class="time">2 小时</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="external">
+								<a href="#">查看所有通知 <i class="m-icon-swapright"></i></a>
+							</li>
+						</ul>
+					</li>
+					<!-- END NOTIFICATION DROPDOWN -->
+					<!-- BEGIN INBOX DROPDOWN -->
+					<li class="dropdown" id="header_inbox_bar">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<i class="icon-envelope"></i>
+						<span class="badge">5</span>
+						</a>
+						<ul class="dropdown-menu extended inbox">
+							<li>
+								<p>你有 12 个新的消息</p>
+							</li>
+							<li>
+								<ul class="dropdown-menu-list scroller" style="height:250px">
+									<li>
+										<a href="inbox.html?a=view">
+										<span class="photo"><img src="./assets/img/avatar2.jpg" alt="" /></span>
+										<span class="subject">
+										<span class="from">朱洋洋</span>
+										<span class="time">刚刚</span>
+										</span>
+										<span class="message">
+										5点钟，网络直播间，周例会+商务中心原型讨论，大家准时到场。
+										</span>  
+										</a>
+									</li>
+									<li>
+										<a href="inbox.html?a=view">
+										<span class="photo"><img src="./assets/img/avatar3.jpg" alt="" /></span>
+										<span class="subject">
+										<span class="from">李承均</span>
+										<span class="time">16 分钟</span>
+										</span>
+										<span class="message">
+										我有乔的视频 那才较给力
+										</span>  
+										</a>
+									</li>
+									<li>
+										<a href="inbox.html?a=view">
+										<span class="photo"><img src="./assets/img/avatar1.jpg" alt="" /></span>
+										<span class="subject">
+										<span class="from">乔涛金</span>
+										<span class="time">2 小时</span>
+										</span>
+										<span class="message">
+										不要啊
+										</span>  
+										</a>
+									</li>
+									<li>
+										<a href="inbox.html?a=view">
+										<span class="photo"><img src="./assets/img/avatar2.jpg" alt="" /></span>
+										<span class="subject">
+										<span class="from">朱洋洋</span>
+										<span class="time">40 分钟</span>
+										</span>
+										<span class="message">
+										还有10分钟下班啦~~~
+										</span>  
+										</a>
+									</li>
+									<li>
+										<a href="inbox.html?a=view">
+										<span class="photo"><img src="./assets/img/avatar3.jpg" alt="" /></span>
+										<span class="subject">
+										<span class="from">李承均</span>
+										<span class="time">46 分钟</span>
+										</span>
+										<span class="message">
+										我有乔的视频 那才较给力
+										</span>  
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="external">
+								<a href="inbox.html">查看所有通知<i class="m-icon-swapright"></i></a>
+							</li>
+						</ul>
+					</li>
+					<!-- END INBOX DROPDOWN -->
+					<!-- BEGIN TODO DROPDOWN -->
+					<li class="dropdown" id="header_task_bar">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<i class="icon-tasks"></i>
+						<span class="badge">5</span>
+						</a>
+						<ul class="dropdown-menu extended tasks">
+							<li>
+								<p>你有 12 个待处理的工作</p>
+							</li>
+							<li>
+								<ul class="dropdown-menu-list scroller" style="height:250px">
+									<li>
+										<a href="#">
+										<span class="task">
+										<span class="desc">发布新版本 0.2</span>
+										<span class="percent">30%</span>
+										</span>
+										<span class="progress progress-success ">
+										<span style="width: 30%;" class="bar"></span>
+										</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="task">
+										<span class="desc">新版原型设计</span>
+										<span class="percent">65%</span>
+										</span>
+										<span class="progress progress-danger progress-striped active">
+										<span style="width: 65%;" class="bar"></span>
+										</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="task">
+										<span class="desc">用户体验提升项目开发</span>
+										<span class="percent">98%</span>
+										</span>
+										<span class="progress progress-success">
+										<span style="width: 98%;" class="bar"></span>
+										</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="task">
+										<span class="desc">WEB前端性能监控平台调研</span>
+										<span class="percent">10%</span>
+										</span>
+										<span class="progress progress-warning progress-striped">
+										<span style="width: 10%;" class="bar"></span>
+										</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="task">
+										<span class="desc">资源库平台升级</span>
+										<span class="percent">58%</span>
+										</span>
+										<span class="progress progress-info">
+										<span style="width: 58%;" class="bar"></span>
+										</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="task">
+										<span class="desc">IM3.5项目开发</span>
+										<span class="percent">85%</span>
+										</span>
+										<span class="progress progress-success">
+										<span style="width: 85%;" class="bar"></span>
+										</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="task">
+										<span class="desc">New UI release</span>
+										<span class="percent">18%</span>
+										</span>
+										<span class="progress progress-important">
+										<span style="width: 18%;" class="bar"></span>
+										</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="external">
+								<a href="#">查看所有任务<i class="m-icon-swapright"></i></a>
+							</li>
+						</ul>
+					</li>
+					<!-- END TODO DROPDOWN -->               
+					<!-- BEGIN USER LOGIN DROPDOWN -->
+					<li class="dropdown user">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<img alt="" src="assets/img/avatar1_small.jpg" />
+						<span class="用户名">乔涛金</span>
+						<i class="icon-angle-down"></i>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="extra_profile.html"><i class="icon-user"></i> 我的个人信息</a></li>
+							<li><a href="page_calendar.html"><i class="icon-calendar"></i> 我的日历</a></li>
+							<li><a href="inbox.html"><i class="icon-envelope"></i> 我的收件箱<span class="badge badge-important">3</span></a></li>
+							<li><a href="#"><i class="icon-tasks"></i> 我的任务<span class="badge badge-success">8</span></a></li>
+							<li class="divider"></li>
+							<li><a href="javascript:;" id="trigger_fullscreen"><i class="icon-move"></i> 放大全屏</a></li>
+							<li><a href="extra_lock.html"><i class="icon-lock"></i> 锁定屏幕</a></li>
+							<li><a href="login.html"><i class="icon-key"></i> 退出</a></li>
+						</ul>
+					</li>
+					<!-- END USER LOGIN DROPDOWN -->
+					<!-- END USER LOGIN DROPDOWN -->
+				</ul>
+				<!-- END TOP NAVIGATION MENU --> 
+			</div>
+		</div>
+		<!-- END TOP NAVIGATION BAR -->
+	</div>
+	<!-- END HEADER -->
+	<!-- BEGIN CONTAINER -->
+	<div class="page-container row-fluid">
+		<!-- BEGIN SIDEBAR -->
+		<div class="page-sidebar nav-collapse collapse">
+			<!-- BEGIN SIDEBAR MENU -->        
+			<ul class="page-sidebar-menu">
+				<li>
+					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+					<div class="sidebar-toggler hidden-phone"></div>
+					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+				</li>
+				<li>
+					<!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+					<form class="sidebar-search">
+						<div class="input-box">
+							<a href="javascript:;" class="remove"></a>
+							<input type="text" placeholder="搜索..." />
+							<input type="button" class="submit" value=" " />
+						</div>
+					</form>
+					<!-- END RESPONSIVE QUICK SEARCH FORM -->
+				</li>
+				<li class="start ">
+					<a href="index.html">
+					<i class="icon-home"></i> 
+					<span class="title">工作台</span>
+					</a>
+				</li>
+				<li >
+					<a href="javascript:;">
+					<i class="icon-cogs"></i> 
+					<span class="title">版式设计</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li >
+							<a href="layout_language_bar.html">
+							<span class="badge badge-roundless badge-important">new</span>语言切换</a>
+						</li>
+						<li >
+							<a href="layout_horizontal_sidebar_menu.html">
+							横向菜单＆侧边栏菜单</a>
+						</li>
+						<li >
+							<a href="layout_horizontal_menu1.html">
+							横向菜单1</a>
+						</li>
+						<li >
+							<a href="layout_horizontal_menu2.html">
+							横向菜单2</a>
+						</li>
+						<li >
+							<a href="layout_promo.html">
+							主题页</a>
+						</li>
+						<li >
+							<a href="layout_email.html">
+							邮件模板</a>
+						</li>
+						<li >
+							<a href="layout_ajax.html">
+							Ajax方式加载</a>
+						</li>
+						<li >
+							<a href="layout_sidebar_closed.html">
+							收缩侧边栏</a>
+						</li>
+						<li >
+							<a href="layout_blank_page.html">
+							空白页</a>
+						</li>
+						<li >
+							<a href="layout_boxed_page.html">
+							定宽响应式</a>
+						</li>
+						<li >
+							<a href="layout_boxed_not_responsive.html">
+							自动响应式</a>
+						</li>
+					</ul>
+				</li>				
+				<!-- BEGIN FRONT DEMO -->
+				<li class="tooltips" data-placement="right" data-original-title="前端主题">
+					<a href="#" target="_blank">
+					<i class="icon-gift"></i> 
+					<span class="title">前端主题</span>
+					</a>
+				</li>
+				<!-- END FRONT DEMO -->
+				<li class="active ">
+					<a href="javascript:;">
+					<i class="icon-bookmark-empty"></i> 
+					<span class="title">元素设计</span>
+					<span class="selected"></span>
+					<span class="arrow open"></span>
+					</a>
+					<ul class="sub-menu">
+						<li class="active">
+							<a href="ui_general.html">
+							普通元素</a>
+						</li>
+						<li >
+							<a href="ui_buttons.html">
+							按钮</a>
+						</li>
+						<li >
+							<a href="ui_modals.html">
+							模态提示</a>
+						</li>
+						<li >
+							<a href="ui_tabs_accordions.html">
+							标签 & 手风琴</a>
+						</li>
+						<li >
+							<a href="ui_jqueryui.html">
+							jQueryUI组件</a>
+						</li>
+						<li >
+							<a href="ui_sliders.html">
+							进度条</a>
+						</li>
+						<li >
+							<a href="ui_tiles.html">
+							磁片</a>
+						</li>
+						<li >
+							<a href="ui_typography.html">
+							文字排版</a>
+						</li>
+						<li >
+							<a href="ui_tree.html">
+							树结构</a>
+						</li>
+						<li >
+							<a href="ui_nestable.html">
+							嵌套列表项</a>
+						</li>
+					</ul>
+				</li>
+				<li >
+					<a href="javascript:;">
+					<i class="icon-table"></i> 
+					<span class="title">表单</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li >
+							<a href="form_layout.html">
+							表单布局</a>
+						</li>
+						<li >
+							<a href="form_samples.html">
+							应用示例</a>
+						</li>
+						<li >
+							<a href="form_component.html">
+							表单组件</a>
+						</li>
+						<li >
+							<a href="form_editable.html">
+							<span class="badge badge-roundless badge-warning">new</span>可编辑</a>
+						</li>
+						<li >
+							<a href="form_wizard.html">
+							表单向导</a>
+						</li>
+						<li >
+							<a href="form_validation.html">
+							表单验证</a>
+						</li>
+						<li >
+							<a href="form_image_crop.html">
+							<span class="badge badge-roundless badge-important">new</span>图像裁剪</a>
+						</li>
+						<li >
+							<a href="form_fileupload.html">
+							多文件上传</a>
+						</li>
+						<li >
+							<a href="form_dropzone.html">
+							拖拽上传</a>
+						</li>
+					</ul>
+				</li>
+				<li >
+					<a href="javascript:;">
+					<i class="icon-briefcase"></i> 
+					<span class="title">页面类型</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li >
+							<a href="page_timeline.html">
+							<i class="icon-time"></i>
+							<span class="badge badge-info">4</span>时间轴</a>
+						</li>
+						<li >
+							<a href="page_coming_soon.html">
+							<i class="icon-cogs"></i>
+							预告</a>
+						</li>
+						<li >
+							<a href="page_blog.html">
+							<i class="icon-comments"></i>
+							博客</a>
+						</li>
+						<li >
+							<a href="page_blog_item.html">
+							<i class="icon-font"></i>
+							博客正文</a>
+						</li>
+						<li >
+							<a href="page_news.html">
+							<i class="icon-coffee"></i>
+							<span class="badge badge-success">9</span>新闻</a>
+						</li>
+						<li >
+							<a href="page_news_item.html">
+							<i class="icon-bell"></i>
+							新闻正文</a>
+						</li>
+						<li >
+							<a href="page_about.html">
+							<i class="icon-group"></i>
+							关于</a>
+						</li>
+						<li >
+							<a href="page_contact.html">
+							<i class="icon-envelope-alt"></i>
+							联系</a>
+						</li>
+						<li >
+							<a href="page_calendar.html">
+							<i class="icon-calendar"></i>
+							<span class="badge badge-important">14</span>日历</a>
+						</li>
+					</ul>
+				</li>
+				<li >
+					<a href="javascript:;">
+					<i class="icon-gift"></i> 
+					<span class="title">扩展</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li >
+							<a href="extra_profile.html">
+							用户信息</a>
+						</li>
+						<li >
+							<a href="extra_lock.html">
+							锁定屏幕</a>
+						</li>
+						<li >
+							<a href="extra_faq.html">
+							常见问题</a>
+						</li>
+						<li >
+							<a href="inbox.html">
+							<span class="badge badge-important">4</span>收件箱</a>
+						</li>
+						<li >
+							<a href="extra_search.html">
+							搜索结果</a>
+						</li>
+						<li >
+							<a href="extra_invoice.html">
+							单据</a>
+						</li>
+						<li >
+							<a href="extra_pricing_table.html">
+							价格表</a>
+						</li>
+						<li >
+							<a href="extra_image_manager.html">
+							图片管理</a>
+						</li>
+						<li >
+							<a href="extra_404_option1.html">
+							404页1</a>
+						</li>
+						<li >
+							<a href="extra_404_option2.html">
+							404页2</a>
+						</li>
+						<li >
+							<a href="extra_404_option3.html">
+							404页3</a>
+						</li>
+						<li >
+							<a href="extra_500_option1.html">
+							500页1</a>
+						</li>
+						<li >
+							<a href="extra_500_option2.html">
+							500页2</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="active" href="javascript:;">
+					<i class="icon-sitemap"></i> 
+					<span class="title">3级菜单</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a href="javascript:;">
+							Item 1
+							<span class="arrow"></span>
+							</a>
+							<ul class="sub-menu">
+								<li><a href="#">Sample Link 1</a></li>
+								<li><a href="#">Sample Link 2</a></li>
+								<li><a href="#">Sample Link 3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;">
+							Item 1
+							<span class="arrow"></span>
+							</a>
+							<ul class="sub-menu">
+								<li><a href="#">Sample Link 1</a></li>
+								<li><a href="#">Sample Link 1</a></li>
+								<li><a href="#">Sample Link 1</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+							Item 3
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">
+					<i class="icon-folder-open"></i> 
+					<span class="title">4级菜单</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a href="javascript:;">
+							<i class="icon-cogs"></i> 
+							Item 1
+							<span class="arrow"></span>
+							</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="javascript:;">
+									<i class="icon-user"></i>
+									Sample Link 1
+									<span class="arrow"></span>
+									</a>
+									<ul class="sub-menu">
+										<li><a href="#"><i class="icon-remove"></i> Sample Link 1</a></li>
+										<li><a href="#"><i class="icon-pencil"></i> Sample Link 1</a></li>
+										<li><a href="#"><i class="icon-edit"></i> Sample Link 1</a></li>
+									</ul>
+								</li>
+								<li><a href="#"><i class="icon-user"></i>  Sample Link 1</a></li>
+								<li><a href="#"><i class="icon-external-link"></i>  Sample Link 2</a></li>
+								<li><a href="#"><i class="icon-bell"></i>  Sample Link 3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;">
+							<i class="icon-globe"></i> 
+							Item 2
+							<span class="arrow"></span>
+							</a>
+							<ul class="sub-menu">
+								<li><a href="#"><i class="icon-user"></i>  Sample Link 1</a></li>
+								<li><a href="#"><i class="icon-external-link"></i>  Sample Link 1</a></li>
+								<li><a href="#"><i class="icon-bell"></i>  Sample Link 1</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+							<i class="icon-folder-open"></i>
+							Item 3
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li >
+					<a href="javascript:;">
+					<i class="icon-user"></i> 
+					<span class="title">登陆页</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li >
+							<a href="login.html">
+							登陆1</a>
+						</li>
+						<li >
+							<a href="login_soft.html">
+							登陆2</a>
+						</li>
+					</ul>
+				</li>
+				<li >
+					<a href="javascript:;">
+					<i class="icon-th"></i> 
+					<span class="title">表格</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li >
+							<a href="table_basic.html">
+							简单表格</a>
+						</li>
+						<li >
+							<a href="table_responsive.html">
+							响应式表格</a>
+						</li>
+						<li >
+							<a href="table_managed.html">
+							管理表格</a>
+						</li>
+						<li >
+							<a href="table_editable.html">
+							表格编辑</a>
+						</li>
+						<li >
+							<a href="table_advanced.html">
+							高级应用示例</a>
+						</li>
+					</ul>
+				</li>
+				<li >
+					<a href="javascript:;">
+					<i class="icon-file-text"></i> 
+					<span class="title">模块面板</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li >
+							<a href="portlet_general.html">
+							固定排列</a>
+						</li>
+						<li >
+							<a href="portlet_draggable.html">
+							拖拽排列</a>
+						</li>
+					</ul>
+				</li>
+				<li >
+					<a href="javascript:;">
+					<i class="icon-map-marker"></i> 
+					<span class="title">地图</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li >
+							<a href="maps_google.html">
+							谷歌地图</a>
+						</li>
+						<li >
+							<a href="maps_vector.html">
+							矢量地图</a>
+						</li>
+					</ul>
+				</li>
+				<li class="last ">
+					<a href="charts.html">
+					<i class="icon-bar-chart"></i> 
+					<span class="title">图表</span>
+					</a>
+				</li>
+			</ul>
+			<!-- END SIDEBAR MENU -->
+		</div>
+		<!-- END SIDEBAR -->
+		<!-- BEGIN PAGE -->
+		<div class="page-content">
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<div id="portlet-config" class="modal hide">
+				<div class="modal-header">
+					<button data-dismiss="modal" class="close" type="button"></button>
+					<h3>Widget Settings</h3>
+				</div>
+				<div class="modal-body">
+					<p>Here will be a configuration form</p>
+				</div>
+			</div>
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<div class="container-fluid">
+				<!-- BEGIN PAGE HEADER-->
+				<div class="row-fluid">
+					<div class="span12">
+						<!-- BEGIN STYLE CUSTOMIZER -->
+						<div class="color-panel hidden-phone">
+							<div class="color-mode-icons icon-color"></div>
+							<div class="color-mode-icons icon-color-close"></div>
+							<div class="color-mode">
+								<p>主题颜色</p>
+								<ul class="inline">
+									<li class="color-black current color-default" data-style="default"></li>
+									<li class="color-blue" data-style="blue"></li>
+									<li class="color-brown" data-style="brown"></li>
+									<li class="color-purple" data-style="purple"></li>
+									<li class="color-grey" data-style="grey"></li>
+									<li class="color-white color-light" data-style="light"></li>
+								</ul>
+								<label>
+									<span>布局</span>
+									<select class="layout-option m-wrap small">
+										<option value="fluid" selected>响应式</option>
+										<option value="boxed">固定宽度</option>
+									</select>
+								</label>
+								<label>
+									<span>页头</span>
+									<select class="header-option m-wrap small">
+										<option value="fixed" selected>始终显示</option>
+										<option value="default">默认</option>
+									</select>
+								</label>
+								<label>
+									<span>侧边栏</span>
+									<select class="sidebar-option m-wrap small">
+										<option value="fixed">始终显示</option>
+										<option value="default" selected>默认</option>
+									</select>
+								</label>
+								<label>
+									<span>页脚</span>
+									<select class="footer-option m-wrap small">
+										<option value="fixed">始终显示</option>
+										<option value="default" selected>默认</option>
+									</select>
+								</label>
+							</div>
+						</div>
+						<!-- END BEGIN STYLE CUSTOMIZER -->             
+						<!-- BEGIN PAGE TITLE & BREADCRUMB-->
+						<h3 class="page-title">
+							普通 <small>普通元素设计</small>
+						</h3>
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home"></i>
+								<a href="index.html">HOME</a> 
+								<i class="icon-angle-right"></i>
+							</li>
+							<li>
+								<a href="#">元素设计</a>
+								<i class="icon-angle-right"></i>
+							</li>
+							<li><a href="#">普通元素</a></li>
+						</ul>
+						<!-- END PAGE TITLE & BREADCRUMB-->
+					</div>
+				</div>
+				<!-- END PAGE HEADER-->
+				<!-- BEGIN PAGE CONTENT-->
+				<div class="row-fluid">
+					<div class="span12">
+						<!-- BEGIN ALERTS PORTLET-->
+						<div class="portlet ">
+							<div class="portlet-title">
+								<div class="caption"><i class="icon-cogs"></i>提醒</div>
+								<div class="tools">
+									<a href="javascript:;" class="collapse"></a>
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+									<a href="javascript:;" class="reload"></a>
+									<a href="javascript:;" class="remove"></a>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<div class="alert">
+									<button class="close" data-dismiss="alert"></button>
+									<strong>警告！</strong> 上周报告尚未发送。
+								</div>
+								<div class="alert alert-success">
+									<button class="close" data-dismiss="alert"></button>
+									<strong>成功！</strong> 已经完成载入。
+								</div>
+								<div class="alert alert-info">
+									<button class="close" data-dismiss="alert"></button>
+									<strong>信息</strong> 你有198条未读信息。
+								</div>
+								<div class="alert alert-error">
+									<button class="close" data-dismiss="alert"></button>
+									<strong>错误！</strong> 2个组件脚本错误！
+								</div>
+							</div>
+						</div>
+						<!-- END ALERTS PORTLET-->
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<!-- BEGIN 行内通知 PORTLET-->
+						<div class="portlet box blue">
+							<div class="portlet-title">
+								<div class="caption"><i class="icon-cogs"></i>行内通知</div>
+								<div class="tools">
+									<a href="javascript:;" class="collapse"></a>
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+									<a href="javascript:;" class="reload hidden-phone"></a>
+									<a href="javascript:;" class="remove hidden-phone"></a>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<div class="alert alert-block alert-error fade in">
+									<button type="button" class="close" data-dismiss="alert"></button>
+									<h4 class="alert-heading">错误！</h4>
+									<p>当神殿已倒塌，科学开始用精确数据和完美的理论的剌刀逼我们看那不可逃避的现实――那就是命运。科学在摧毁神学的虚伪理性，宗教的神圣禁锢的同时又建立起自己的宿命论。
+									</p>
+									<p>
+										<a class="btn red" href="#">处理</a> <a class="btn blue" href="#">不理</a>
+									</p>
+								</div>
+								<div class="alert alert-block alert-success fade in">
+									<button type="button" class="close" data-dismiss="alert"></button>
+									<h4 class="alert-heading">成功！</h4>
+									<p>
+										当神殿已倒塌，科学开始用精确数据和完美的理论的剌刀逼我们看那不可逃避的现实――那就是命运。科学在摧毁神学的虚伪理性，宗教的神圣禁锢的同时又建立起自己的宿命论。
+									</p>
+									<p>
+										<a class="btn green" href="#">处理</a> <a class="btn black" href="#">不理</a>
+									</p>
+								</div>
+								<div class="alert alert-block alert-info fade in">
+									<button type="button" class="close" data-dismiss="alert"></button>
+									<h4 class="alert-heading">信息</h4>
+									<p>
+										当神殿已倒塌，科学开始用精确数据和完美的理论的剌刀逼我们看那不可逃避的现实――那就是命运。科学在摧毁神学的虚伪理性，宗教的神圣禁锢的同时又建立起自己的宿命论。
+									</p>
+									<p>
+										<a class="btn purple" href="#">处理</a> <a class="btn black" href="#">不理</a>
+									</p>
+								</div>
+								<div class="alert alert-block alert-warning fade in">
+									<button type="button" class="close" data-dismiss="alert"></button>
+									<h4 class="alert-heading">警告！</h4>
+									<p>
+										当神殿已倒塌，科学开始用精确数据和完美的理论的剌刀逼我们看那不可逃避的现实――那就是命运。科学在摧毁神学的虚伪理性，宗教的神圣禁锢的同时又建立起自己的宿命论。
+									</p>
+									<p>
+										<a class="btn red" href="#">处理</a> <a class="btn blue" href="#">不理</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- END 行内通知 PORTLET-->
+						<!-- BEGIN GRITTER NOTIFICATIONS PORTLET-->
+						<div class="portlet box green">
+							<div class="portlet-title">
+								<div class="caption"><i class="icon-cogs"></i>无打扰通知</div>
+								<div class="tools">
+									<a href="javascript:;" class="collapse"></a>
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+									<a href="javascript:;" class="reload hidden-phone"></a>
+									<a href="javascript:;" class="remove hidden-phone"></a>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<h5>点击下面的按钮查看效果。</h5>
+								<p>   
+									<a href="javascript:;" class="btn " id="gritter-regular">定时消失</a>
+									<a href="javascript:;" class="btn green" id="gritter-sticky">手动关闭</a>
+									<a href="javascript:;" class="btn blue" id="gritter-without-image">无图片</a>
+								</p>
+								<p>
+									<a href="javascript:;" class="btn purple" id="gritter-light">白色</a>
+									<a href="javascript:;" class="btn black" id="gritter-max">最多数量（3）</a>
+									<a href="javascript:;" class="btn blue" id="gritter-remove-all">关闭全部</a>
+								</p>
+							</div>
+						</div>
+						<!-- END GRITTER NOTIFICATIONS PORTLET-->
+						<!-- BEGIN PULSATE PORTLET-->
+						<div class="portlet box grey">
+							<div class="portlet-title">
+								<div class="caption"><i class="icon-cogs"></i>脉动</div>
+								<div class="tools">
+									<a href="javascript:;" class="collapse"></a>
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+									<a href="javascript:;" class="reload"></a>
+									<a href="javascript:;" class="remove"></a>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<h5>脉动可作用任何页面元素。</h5>
+								<div id="pulsate-regular" style="padding:5px;">
+									重复动作
+								</div>
+								<div class="space20"></div>
+								<button class="btn green" id="pulsate-once">脉动一次</button>
+								<button class="btn red" id="pulsate-crazy">歇斯底里脉动 :)</button>
+								<div class="space10"></div>
+								<span class="label label-important">注意！</span>
+								<span>
+								IE6-8慎用
+								</span>
+							</div>
+						</div>
+						<!-- END PULSATE PORTLET-->
+						<!-- BEGIN MODAL DIALOG PORTLET-->
+						<div class="portlet box purple">
+							<div class="portlet-title">
+								<div class="caption"><i class="icon-cogs"></i>对话框</div>
+								<div class="tools">
+									<a href="javascript:;" class="collapse"></a>
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+									<a href="javascript:;" class="reload"></a>
+									<a href="javascript:;" class="remove"></a>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<h5>点击下面的按钮查看效果。</h5>
+								<!-- Button to trigger modal -->
+								<a href="#myModal1" role="button" class="btn btn-primary" data-toggle="modal">模态对话框</a>
+								<a href="#myModal2" role="button" class="btn btn-danger" data-toggle="modal">Alert</a>
+								<a href="#myModal3" role="button" class="btn btn-warning" data-toggle="modal">确认</a>
+								<!-- Modal -->
+								<div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+										<h3 id="myModalLabel1">头标题</h3>
+									</div>
+									<div class="modal-body">
+										<p>内容区域</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+										<button class="btn yellow">保存</button>
+									</div>
+								</div>
+								<div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+										<h3 id="myModalLabel2">头标题</h3>
+									</div>
+									<div class="modal-body">
+										<p>内容区域</p>
+									</div>
+									<div class="modal-footer">
+										<button data-dismiss="modal" class="btn green">确定</button>
+									</div>
+								</div>
+								<div id="myModal3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+										<h3 id="myModalLabel3">标题</h3>
+									</div>
+									<div class="modal-body">
+										<p>内容区域</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+										<button data-dismiss="modal" class="btn blue">确认</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- END MODAL DIALOG PORTLET-->
+						<!-- BEGIN TOOLTIPS PORTLET-->
+						<div class="portlet box red">
+							<div class="portlet-title">
+								<div class="caption"><i class="icon-cogs"></i>提示信息</div>
+								<div class="tools">
+									<a href="javascript:;" class="collapse"></a>
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+									<a href="javascript:;" class="reload"></a>
+									<a href="javascript:;" class="remove"></a>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<p>
+									它用宇宙大爆炸理论替 
+									<a href="#" class="tooltips" data-original-title="Default tooltip">代盘古开天地</a> 
+									的神话，用相对论解释天上一日，地下千年的神奇。把
+									<a href="#" class="tooltips" data-original-title="Another tooltip">维纳斯</a> 的人体美变成数字的黄金分割。把
+									<a href="#" class="tooltips" title="12" data-original-title="The last tip!">贝多芬</a> 
+									的音乐变成数码，把梦境变成神经冲动。从而也消灭了一切幻想。人类的童年结束了。
+								</p>
+								<p>
+									<button class="btn tooltips" data-placement="top" data-original-title="Tooltip in top">Top</button>
+									<button class="btn tooltips" data-placement="left" data-original-title="Tooltip in left">Left</button>
+									<button class="btn tooltips" data-placement="right" data-original-title="Tooltip in right">Right</button>
+									<button class="btn tooltips" data-placement="bottom" data-original-title="Tooltip in bottom">Bottom</button>
+								</p>
+							</div>
+						</div>
+						<!-- END TOOLTIPS PORTLET-->
+						<!-- BEGIN TOOLTIPS PORTLET-->
+						<div class="portlet box blue">
+							<div class="portlet-title">
+								<div class="caption"><i class="icon-cogs"></i>提示信息滚动框内</div>
+								<div class="tools">
+									<a href="javascript:;" class="collapse"></a>
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+									<a href="javascript:;" class="reload"></a>
+									<a href="javascript:;" class="remove"></a>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<div class="scroller" style="min-height:150px" data-always-visible="1" data-rail-visible="0">
+									<p>
+										<button class="btn tooltips" data-container="body" data-placement="top" data-original-title="Tooltip in top">Top</button>
+										<button class="btn tooltips" data-container="body" data-placement="left" data-original-title="Tooltip in left">Left</button>
+										<button class="btn tooltips" data-container="body" data-placement="right" data-original-title="Tooltip in right">Right</button>
+										<button class="btn tooltips" data-container="body" data-placement="bottom" data-original-title="Tooltip in bottom">Bottom</button>
+									</p>
+									<p>
+										人类失去了
+										<a href="#" class="tooltips" data-container="body" data-original-title="Default tooltip">伊甸园，</a> 
+										开始了漫漫旅途。走过的地方越来越多，
+										<a href="#" class="tooltips" data-container="body" data-original-title="Another tooltip">人类</a> 
+										的领地不断扩大
+										<a href="#" class="tooltips" title="12" data-container="body" data-original-title="The last tip!">可是，所期待</a> 
+										的一直没有出现。
+									</p>
+									<p>
+										<button class="btn tooltips" data-container="body" data-placement="top" data-original-title="Tooltip in top">Top</button>
+										<button class="btn tooltips" data-container="body" data-placement="left" data-original-title="Tooltip in left">Left</button>
+										<button class="btn tooltips" data-container="body" data-placement="right" data-original-title="Tooltip in right">Right</button>
+										<button class="btn tooltips" data-container="body" data-placement="bottom" data-original-title="Tooltip in bottom">Bottom</button>
+									</p>
+									<p>
+										尽管光明在扩展
+										<a href="#" class="tooltips" data-container="body" data-original-title="Default tooltip">但黑夜却永不见减少</a> 
+										。永恒的夜幕，
+										<a href="#" class="tooltips" data-container="body" data-original-title="Another tooltip">在人类的前方。</a> 
+										人类知道的越多，就越发现自己的无知。
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- END TOOLTIPS PORTLET-->
+						<!-- BEGIN POPOVERS PORTLET-->
+						<div class="portlet box yellow">
+							<div class="portlet-title">
+								<div class="caption"><i class="icon-cogs"></i>提示框</div>
+								<div class="tools">
+									<a href="javascript:;" class="collapse"></a>
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+									<a href="javascript:;" class="reload"></a>
+									<a href="javascript:;" class="remove"></a>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<p>
+									Tight pants next level keffiyeh 
+									<a href="javascript:;" class="popovers" data-content="Popover body goes here! Popover body goes here!" data-original-title="Default Popover">trigger me on click</a> haven't heard of them. 
+									Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel 
+									<a href="javascript:;" class="popovers" data-trigger="hover" data-content="Popover body goes here! Popover body goes here!" data-original-title="Another Popover">trigger me on hover</a> 
+									terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa.
+								</p>
+								<p>
+									<button class="btn popovers" data-trigger="hover" data-placement="top" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover in top">Top</button>
+									<button class="btn popovers" data-trigger="hover" data-placement="left" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover in left">Left</button>
+									<button class="btn popovers" data-trigger="hover" data-placement="right" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover in right">Right</button>
+									<button class="btn popovers" data-trigger="hover" data-placement="bottom" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover in bottom">Bottom</button>
+								</p>
+							</div>
+						</div>
+						<!-- END POPOVERS PORTLET-->
+						<!-- BEGIN POPOVERS PORTLET-->
+						<div class="portlet box green">
+							<div class="portlet-title">
+								<div class="caption"><i class="icon-cogs"></i>提示框适应滚动条</div>
+								<div class="tools">
+									<a href="javascript:;" class="collapse"></a>
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+									<a href="javascript:;" class="reload"></a>
+									<a href="javascript:;" class="remove"></a>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<div class="scroller" style="min-height:150px" data-always-visible="1" data-rail-visible="0">
+									<p>
+										<button class="btn popovers" data-trigger="hover" data-container="body" data-placement="top" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover in top">Top</button>
+										<button class="btn popovers" data-trigger="hover" data-container="body" data-placement="left" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover in left">Left</button>
+										<button class="btn popovers" data-trigger="hover" data-container="body" data-placement="right" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover in right">Right</button>
+										<button class="btn popovers" data-trigger="hover" data-container="body" data-placement="bottom" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover in bottom">Bottom</button>
+									</p>
+									<p>
+										Tight pants next level keffiyeh 
+										<a href="javascript:;" class="popovers" data-container="body" data-content="Popover body goes here! Popover body goes here!" data-original-title="Default Popover">trigger me on click</a> haven't heard of them. 
+										Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel 
+										<a href="javascript:;" class="popovers" data-container="body" data-trigger="hover" data-content="Popover body goes here! Popover body goes here!" data-original-title="Another Popover">trigger me on hover</a> 
+										terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa.
+									</p>
+									<p>
+										<button class="btn popovers" data-trigger="hover" data-container="body" data-placement="top" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover in top">Top</button>
+										<button class="btn popovers" data-trigger="hover" data-container="body" data-placement="left" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover in left">Left</button>
+										<button class="btn popovers" data-trigger="hover" data-container="body" data-placement="right" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover in right">Right</button>
+										<button class="btn popovers" data-trigger="hover" data-container="body" data-placement="bottom" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover in bottom">Bottom</button>
+									</p>
+									<p>
+										Tight pants next level keffiyeh 
+										<a href="javascript:;" class="popovers" data-container="body" data-content="Popover body goes here! Popover body goes here!" data-original-title="Default Popover">trigger me on click</a> haven't heard of them. 
+										Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel 
+										<a href="javascript:;" class="popovers" data-container="body" data-trigger="hover" data-content="Popover body goes here! Popover body goes here!" data-original-title="Another Popover">trigger me on hover</a> 
+										terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- END POPOVERS PORTLET-->
+					</div>
+					<div class="span6">
+						<!-- BEGIN PROGRESS BARS PORTLET-->
+						<div class="portlet box green">
+							<div class="portlet-title">
+								<div class="caption"><i class="icon-cogs"></i>进度条</div>
+								<div class="tools">
+									<a href="javascript:;" class="collapse"></a>
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+									<a href="javascript:;" class="reload"></a>
+									<a href="javascript:;" class="remove"></a>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<div class="alert">
+									进度条使用CSS3渐变过渡和动画，IE9以下浏览器慎用。
+								</div>
+								<h3>基本</h3>
+								<div class="progress">
+									<div style="width: 60%;" class="bar"></div>
+								</div>
+								<div class="progress progress-success">
+									<div style="width: 60%;" class="bar"></div>
+								</div>
+								<div class="progress progress-warning">
+									<div style="width: 60%;" class="bar"></div>
+								</div>
+								<div class="progress progress-danger">
+									<div style="width: 60%;" class="bar"></div>
+								</div>
+								<h3>条纹</h3>
+								<div class="progress progress-striped">
+									<div style="width: 60%;" class="bar"></div>
+								</div>
+								<div class="progress progress-striped progress-success">
+									<div style="width: 60%;" class="bar"></div>
+								</div>
+								<div class="progress progress-striped progress-warning">
+									<div style="width: 60%;" class="bar"></div>
+								</div>
+								<div class="progress progress-striped progress-danger">
+									<div style="width: 60%;" class="bar"></div>
+								</div>
+								<h3>动画效果</h3>
+								<div class="progress progress-striped active">
+									<div style="width: 60%;" class="bar"></div>
+								</div>
+								<div class="progress progress-striped progress-success active">
+									<div style="width: 60%;" class="bar"></div>
+								</div>
+								<div class="progress progress-striped progress-warning active">
+									<div style="width: 60%;" class="bar"></div>
+								</div>
+								<div class="progress progress-striped progress-danger active">
+									<div style="width: 60%;" class="bar"></div>
+								</div>
+								<h3>分段</h3>
+								<div class="progress">
+									<div class="bar bar-success" style="width: 35%;"></div>
+									<div class="bar bar-warning" style="width: 20%;"></div>
+									<div class="bar bar-danger" style="width: 10%;"></div>
+								</div>
+							</div>
+						</div>
+						<!-- END PROGRESS BARS PORTLET-->
+						<!-- BEGIN 标签 / 标记 PORTLET-->
+						<div class="portlet box blue">
+							<div class="portlet-title">
+								<div class="caption"><i class="icon-cogs"></i>标签 / 标记</div>
+								<div class="tools">
+									<a href="javascript:;" class="collapse"></a>
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+									<a href="javascript:;" class="reload"></a>
+									<a href="javascript:;" class="remove"></a>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<table class="table table-bordered table-striped">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Labels</th>
+											<th>Badges</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												Default
+											</td>
+											<td>
+												<span class="badge">1</span>
+											</td>
+											<td>
+												<span class="label">默认</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Success
+											</td>
+											<td>
+												<span class="badge badge-success">2</span>
+											</td>
+											<td>
+												<span class="label label-success">Success</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Warning
+											</td>
+											<td>
+												<span class="badge badge-warning">4</span>
+											</td>
+											<td>
+												<span class="label label-warning">Warning</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Important
+											</td>
+											<td>
+												<span class="badge badge-important">6</span>
+											</td>
+											<td>
+												<span class="label label-important">Important</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Info
+											</td>
+											<td>
+												<span class="badge badge-info">8</span>
+											</td>
+											<td>
+												<span class="label label-info">Info</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Inverse
+											</td>
+											<td>
+												<span class="badge badge-inverse">10</span>
+											</td>
+											<td>
+												<span class="label label-inverse">Inverse</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- END 标签 / 标记 PORTLET-->
+						<!-- BEGIN PAGINATION PORTLET-->
+						<div class="portlet box purple">
+							<div class="portlet-title">
+								<div class="caption"><i class="icon-cogs"></i>分页器</div>
+								<div class="tools">
+									<a href="javascript:;" class="collapse"></a>
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+									<a href="javascript:;" class="reload"></a>
+									<a href="javascript:;" class="remove"></a>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<div class="pagination pagination-large">
+									<ul>
+										<li><a href="#">«</a></li>
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">»</a></li>
+									</ul>
+								</div>
+								<div class="pagination">
+									<ul>
+										<li><a href="#">«</a></li>
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">»</a></li>
+									</ul>
+								</div>
+								<div class="pagination pagination-small">
+									<ul>
+										<li><a href="#">«</a></li>
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">»</a></li>
+									</ul>
+								</div>
+								<div class="pagination pagination-mini">
+									<ul>
+										<li><a href="#">«</a></li>
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">»</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- END PAGINATION PORTLET-->
+						<!-- BEGIN PAGINATION PORTLET-->
+						<div class="portlet box purple">
+							<div class="portlet-title">
+								<div class="caption"><i class="icon-cogs"></i>动态分页</div>
+								<div class="tools">
+									<a href="javascript:;" class="collapse"></a>
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<div>
+									<h4>Basic 分页器</h4>
+									<p id="dynamic_pager_content1" class="well">Page 1 content 这里</p>
+									<p id="dynamic_pager_demo1" class="pagination"></p>
+								</div>
+								<hr>
+								<div>
+									<h4>Advance 分页器</h4>
+									<p id="dynamic_pager_content2" class="well">Page 1 content 这里</p>
+									<p id="dynamic_pager_demo2" class="pagination"></p>
+								</div>
+							</div>
+						</div>
+						<!-- END PAGINATION PORTLET-->
+					</div>
+				</div>
+				<!-- END PAGE CONTENT-->
+			</div>
+			<!-- END PAGE CONTAINER-->       
+		</div>
+		<!-- BEGIN PAGE -->     
+	</div>
+	<!-- END CONTAINER -->
+	<!-- BEGIN FOOTER -->
+	<div class="footer">
+		<div class="footer-inner">
+			2013 &copy; WEB前端开发部
+		</div>
+		<div class="footer-tools">
+			<span class="go-top">
+			<i class="icon-angle-up"></i>
+			</span>
+		</div>
+	</div>
+	<!-- END FOOTER -->
+	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+	<!-- BEGIN CORE PLUGINS -->   <script src="assets/plugins/jquery-1.10.1.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+	<script src="assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js" type="text/javascript" ></script>
+	<!--[if lt IE 9]>
+	<script src="assets/plugins/excanvas.min.js"></script>
+	<script src="assets/plugins/respond.min.js"></script>  
+	<![endif]-->   
+	<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery.blockui.min.js" type="text/javascript"></script>  
+	<script src="assets/plugins/jquery.cookie.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript" ></script>
+	<!-- END CORE PLUGINS -->
+	<!-- BEGIN PAGE LEVEL PLUGINS -->
+	<script type="text/javascript" src="assets/plugins/gritter/js/jquery.gritter.js"></script>
+	<script type="text/javascript" src="assets/plugins/jquery.pulsate.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/jquery.bootpag.min.js"></script>
+	<!-- END PAGE LEVEL PLUGINS -->
+	<!-- BEGIN PAGE LEVEL SCRIPTS -->
+	<script src="assets/scripts/app.js"></script>
+	<script src="assets/scripts/ui-general.js"></script>     
+	<!-- END PAGE LEVEL SCRIPTS -->
+	<script>
+		jQuery(document).ready(function() {       
+		   // initiate layout and plugins
+		   App.init();
+		   UIGeneral.init();
+		});
+	</script>
+	<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

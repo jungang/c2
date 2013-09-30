@@ -1,0 +1,87 @@
+空间要求:
+
+- PHP5
+
+安装说明:
+
+1. 解压下载下来的压缩包.
+  
+2. 打开 /inc/config.php 第22行, 修改 'abc12345' 为您的密码.
+
+3. 将修改好的文件上传到你的空间.
+
+4. 确保你的空间有写入 /data_layer/xml/comments.xml 的权利
+
+如果你不用数据库，请保证您的空间对 /htmlpurifier/standalone/HTMLPurifier/DefinitionCache/Serializer 有写入的权利
+
+如果你要用mysql数据空, 复制 /data_layer/mysql/comments.php， 把他复制到 /inc/. 并在那个文件里 enter 输入你的数据库用户名密码，和表的前缀名，他就会自动执行啦.
+
+如果你想用其他的数据空, 只需要修改 /inc/comments.php，按照您的选择修改.
+
+
+系统使用与设置:
+
+配置文件让你有很多地方可以选择.
+你可以修改 (修改inc/config.php，数字代表配置的行数):
+
+12. 留言存储文件. 如果你想换个名字的话,在这里修改 .
+13. 留言页面的文件名. 如果你想修改的话，在这里修改.
+14. 一次载入留言的数量. 推荐 20-50.
+15. 日期格式. 其他的日期格式, 去 http://php.net/manual/en/function.date.php 看看吧
+16. 输入风格的文件夹名称.
+17. 你所用的语言. 文件在 /localization/ .
+18. 表情图片的文件夹地址. 必须是绝对地址. 如果不需要表情的话，设置为 false .
+19. 如果你想得到留言的提醒的话，在这里输入你的邮件地址. 不用的话，设置为 false .
+
+22. 后台管理的密码.
+
+25. 设置为 true, HTML Purifier 会帮你屏蔽 HTML 的留言（防止垃圾留言用）. 如果设置为 false, all tags will be stripped. For more information on HTML Purifier, go to http://htmlpurifier.org/
+26. 你页面的character encoding . Required by HTML Purifier.
+27. 你页面的 doctype . Required by HTML Purifier.
+28. 这里填写允许的 HTML 元素. Required by HTML Purifier.
+
+31. 您的 Akismet key. 输入 key 之后, Akismet 就会帮你屏蔽垃圾留言啦. 如果不输入 key, 会自动启用一个简单的垃圾留言过滤系统. 更多关于Akismet： http://akismet.com/
+32. 留言本的url. Required by Akismet.
+
+35. 如果表情功能启用的话, 你输入的字符会替换为表情. 
+
+管理留言:
+
+后台管理地址 [您的留言板地址]/admin。
+
+注: 如果你输入Akismet key的话, 当你把一个留言设为垃圾评论的时候Akismet也会收集这些信息.
+
+
+安装风格:
+
+风格文件请放在"theme"文件夹里。
+
+使用某个风格，修改"config.inc "第16行，写上风格文件夹的名称。
+
+
+创作风格:
+
+目前，风格修改只需要修改css文件，不需要修改HTML，
+
+风格必须在自己的文件夹里..
+
+风格里必须包含这些文件：
+
+- style.css
+- style_js.css
+
+如果浏览器支持js的话，style_js.css就会起作用.
+
+
+
+
+
+关于版权方面的问题请参照文件“LICENSE.txt”，所有资料仅供学习观摩使用，所引起的一切责任与本人无关。
+
+另外这个留言板缺少个回复功能，要是谁加上了回复功能请发给我一份，谢谢！
+
+sysdzw
+Email:sysdzw@163.com
+QQ:171977759
+
+23:06 2009-10-4

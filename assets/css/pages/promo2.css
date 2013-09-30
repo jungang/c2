@@ -1,0 +1,41 @@
+#proposal h2{
+	font-size: 14px;
+}
+.bd11{
+position:relative;
+}
+.rsbox,
+.rsbox,.userbox{z-index:999;border-radius:2px;position:fixed;
+position:absolute;
+min-height:24px;
+min-width:24px;
+max-width:30%;
+line-height:24px;
+padding:3px;
+background:#f7f7f7;
+top:70px;
+left:35%;
+border:1px solid #d4d4d4;
+}
+ 
+.rsbox{
+top:40px;
+text-align: center;
+ }
+.userbox{
+padding: 20px;
+}
+.userbox form{
+margin:0;
+}
+.chats{
+margin-top: 15px;
+}
+.bd1 textarea{
+	height: 150px;
+}
+#listold{
+display: block;
+margin: 0 auto;
+width: 200px;
+}

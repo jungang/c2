@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+	<meta charset="utf-8" />
+	<title>个人工作台 | 版式设计 - Ajax方式加载</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+	<link href="assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/style-metro.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+	<link href="assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+	<!-- END GLOBAL MANDATORY STYLES -->
+	<!-- BEGIN PAGE LEVEL STYLES -->
+	<link rel="stylesheet" type="text/css" href="assets/plugins/select2/select2_metro.css" />
+	<!-- END PAGE LEVEL STYLES -->
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed">
+	<!-- BEGIN HEADER -->   
+	<div class="header navbar navbar-inverse navbar-fixed-top">
+		<!-- BEGIN TOP NAVIGATION BAR -->
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<!-- BEGIN LOGO -->
+				<a class="brand" href="index.html">
+				<img src="assets/img/logo.png" alt="logo" />
+				</a>
+				<!-- END LOGO -->
+				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+				<a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+				<img src="assets/img/menu-toggler.png" alt="" />
+				</a>          
+				<!-- END RESPONSIVE MENU TOGGLER -->            
+				<!-- BEGIN TOP NAVIGATION MENU -->              
+				<ul class="nav pull-right">
+					<!-- BEGIN NOTIFICATION DROPDOWN -->   
+					<li class="dropdown" id="header_notification_bar">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<i class="icon-warning-sign"></i>
+						<span class="badge">6</span>
+						</a>
+						<ul class="dropdown-menu extended notification">
+							<li>
+								<p>你有 14 个新通知</p>
+							</li>
+							<li>
+								<ul class="dropdown-menu-list scroller" style="height:250px">
+									<li>
+										<a href="#">
+										<span class="label label-success"><i class="icon-plus"></i></span>
+										新用户<骏马之纲>注册。
+										<span class="time">刚才</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-important"><i class="icon-bolt"></i></span>
+										商务中心服务器重载
+										<span class="time">15 分钟</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-warning"><i class="icon-bell"></i></span>
+										商务中心服务器长时间未响应。
+										<span class="time">22 分钟</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-info"><i class="icon-bullhorn"></i></span>
+										web发发消息接口报错。
+										<span class="time">40 分钟</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-important"><i class="icon-bolt"></i></span>
+										数据库超载68％。 
+										<span class="time">2 小时</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-important"><i class="icon-bolt"></i></span>
+										2个欺诈嫌疑用户IP封锁。
+										<span class="time">5 小时</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-warning"><i class="icon-bell"></i></span>
+										日志存储服务器没有响应。
+										<span class="time">45 分钟</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-info"><i class="icon-bullhorn"></i></span>
+										页面脚本报错。
+										<span class="time">55 分钟</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="label label-important"><i class="icon-bolt"></i></span>
+										数据库超载68％。 
+										<span class="time">2 小时</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="external">
+								<a href="#">查看所有通知 <i class="m-icon-swapright"></i></a>
+							</li>
+						</ul>
+					</li>
+					<!-- END NOTIFICATION DROPDOWN -->
+					<!-- BEGIN INBOX DROPDOWN -->
+					<li class="dropdown" id="header_inbox_bar">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<i class="icon-envelope"></i>
+						<span class="badge">5</span>
+						</a>
+						<ul class="dropdown-menu extended inbox">
+							<li>
+								<p>你有 12 个新的消息</p>
+							</li>
+							<li>
+								<ul class="dropdown-menu-list scroller" style="height:250px">
+									<li>
+										<a href="inbox.html?a=view">
+										<span class="photo"><img src="./assets/img/avatar2.jpg" alt="" /></span>
+										<span class="subject">
+										<span class="from">朱洋洋</span>
+										<span class="time">刚刚</span>
+										</span>
+										<span class="message">
+										5点钟，网络直播间，周例会+商务中心原型讨论，大家准时到场。
+										</span>  
+										</a>
+									</li>
+									<li>
+										<a href="inbox.html?a=view">
+										<span class="photo"><img src="./assets/img/avatar3.jpg" alt="" /></span>
+										<span class="subject">
+										<span class="from">李承均</span>
+										<span class="time">16 分钟</span>
+										</span>
+										<span class="message">
+										我有乔的视频 那才较给力
+										</span>  
+										</a>
+									</li>
+									<li>
+										<a href="inbox.html?a=view">
+										<span class="photo"><img src="./assets/img/avatar1.jpg" alt="" /></span>
+										<span class="subject">
+										<span class="from">乔涛金</span>
+										<span class="time">2 小时</span>
+										</span>
+										<span class="message">
+										不要啊
+										</span>  
+										</a>
+									</li>
+									<li>
+										<a href="inbox.html?a=view">
+										<span class="photo"><img src="./assets/img/avatar2.jpg" alt="" /></span>
+										<span class="subject">
+										<span class="from">朱洋洋</span>
+										<span class="time">40 分钟</span>
+										</span>
+										<span class="message">
+										还有10分钟下班啦~~~
+										</span>  
+										</a>
+									</li>
+									<li>
+										<a href="inbox.html?a=view">
+										<span class="photo"><img src="./assets/img/avatar3.jpg" alt="" /></span>
+										<span class="subject">
+										<span class="from">李承均</span>
+										<span class="time">46 分钟</span>
+										</span>
+										<span class="message">
+										我有乔的视频 那才较给力
+										</span>  
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="external">
+								<a href="inbox.html">查看所有通知<i class="m-icon-swapright"></i></a>
+							</li>
+						</ul>
+					</li>
+					<!-- END INBOX DROPDOWN -->
+					<!-- BEGIN TODO DROPDOWN -->
+					<li class="dropdown" id="header_task_bar">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<i class="icon-tasks"></i>
+						<span class="badge">5</span>
+						</a>
+						<ul class="dropdown-menu extended tasks">
+							<li>
+								<p>你有 12 个待处理的工作</p>
+							</li>
+							<li>
+								<ul class="dropdown-menu-list scroller" style="height:250px">
+									<li>
+										<a href="#">
+										<span class="task">
+										<span class="desc">发布新版本 0.2</span>
+										<span class="percent">30%</span>
+										</span>
+										<span class="progress progress-success ">
+										<span style="width: 30%;" class="bar"></span>
+										</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="task">
+										<span class="desc">新版原型设计</span>
+										<span class="percent">65%</span>
+										</span>
+										<span class="progress progress-danger progress-striped active">
+										<span style="width: 65%;" class="bar"></span>
+										</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="task">
+										<span class="desc">用户体验提升项目开发</span>
+										<span class="percent">98%</span>
+										</span>
+										<span class="progress progress-success">
+										<span style="width: 98%;" class="bar"></span>
+										</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="task">
+										<span class="desc">WEB前端性能监控平台调研</span>
+										<span class="percent">10%</span>
+										</span>
+										<span class="progress progress-warning progress-striped">
+										<span style="width: 10%;" class="bar"></span>
+										</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="task">
+										<span class="desc">资源库平台升级</span>
+										<span class="percent">58%</span>
+										</span>
+										<span class="progress progress-info">
+										<span style="width: 58%;" class="bar"></span>
+										</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="task">
+										<span class="desc">IM3.5项目开发</span>
+										<span class="percent">85%</span>
+										</span>
+										<span class="progress progress-success">
+										<span style="width: 85%;" class="bar"></span>
+										</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<span class="task">
+										<span class="desc">New UI release</span>
+										<span class="percent">18%</span>
+										</span>
+										<span class="progress progress-important">
+										<span style="width: 18%;" class="bar"></span>
+										</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="external">
+								<a href="#">查看所有任务<i class="m-icon-swapright"></i></a>
+							</li>
+						</ul>
+					</li>
+					<!-- END TODO DROPDOWN -->               
+					<!-- BEGIN USER LOGIN DROPDOWN -->
+					<li class="dropdown user">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<img alt="" src="assets/img/avatar1_small.jpg" />
+						<span class="用户名">乔涛金</span>
+						<i class="icon-angle-down"></i>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="extra_profile.html"><i class="icon-user"></i> 我的个人信息</a></li>
+							<li><a href="page_calendar.html"><i class="icon-calendar"></i> 我的日历</a></li>
+							<li><a href="inbox.html"><i class="icon-envelope"></i> 我的收件箱<span class="badge badge-important">3</span></a></li>
+							<li><a href="#"><i class="icon-tasks"></i> 我的任务<span class="badge badge-success">8</span></a></li>
+							<li class="divider"></li>
+							<li><a href="javascript:;" id="trigger_fullscreen"><i class="icon-move"></i> 放大全屏</a></li>
+							<li><a href="extra_lock.html"><i class="icon-lock"></i> 锁定屏幕</a></li>
+							<li><a href="login.html"><i class="icon-key"></i> 退出</a></li>
+						</ul>
+					</li>
+					<!-- END USER LOGIN DROPDOWN -->
+					<!-- END USER LOGIN DROPDOWN -->
+				</ul>
+				<!-- END TOP NAVIGATION MENU --> 
+			</div>
+		</div>
+		<!-- END TOP NAVIGATION BAR -->
+	</div>
+	<!-- END HEADER -->
+	<!-- BEGIN CONTAINER -->
+	<div class="page-container row-fluid">
+		<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+		<div id="portlet-config" class="modal hide">
+			<div class="modal-header">
+				<button data-dismiss="modal" class="close" type="button"></button>
+				<h3>Widget Settings</h3>
+			</div>
+			<div class="modal-body">
+				<p>Here will be a configuration form</p>
+			</div>
+		</div>
+		<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+		<!-- BEGIN SIDEBAR1 -->
+		<div class="page-sidebar nav-collapse collapse">
+			<!-- BEGIN SIDEBAR MENU1 -->         
+			<ul class="page-sidebar-menu">
+				<li>
+					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+					<div class="sidebar-toggler hidden-phone"></div>
+					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+				</li>
+				<li>
+					<!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+					<form class="sidebar-search">
+						<div class="input-box">
+							<a href="javascript:;" class="remove"></a>
+							<input type="text" placeholder="搜索..." />            
+							<input type="button" class="submit" value=" " />
+						</div>
+					</form>
+					<!-- END RESPONSIVE QUICK SEARCH FORM -->
+				</li>
+				<li class="start">
+					<a class="ajaxify start" href="layout_ajax_content_1.html">
+					<i class="icon-home"></i> 
+					<span class="title">工作台</span>
+					<span class="selected"></span>
+					</a>
+				</li>
+				<li >
+					<a href="javascript:;">
+					<i class="icon-cogs"></i> 
+					<span class="title">Ajax 示例页面1</span>
+					<span class="selected"></span>
+					<span class="arrow open"></span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a class="ajaxify" href="layout_ajax_content_2.html">
+							Ajax 示例链接 1                    
+							</a>
+						</li>
+						<li>
+							<a class="ajaxify" href="layout_ajax_content_3.html">
+							Ajax 示例链接 2                    
+							</a>
+						</li>
+						<li>
+							<a class="ajaxify" href="layout_ajax_content_2.html">
+							Ajax 示例链接 3                    
+							</a>
+						</li>
+						<li>
+							<a class="ajaxify" href="layout_ajax_content_3.html">
+							Ajax 示例链接 4                    
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li >
+					<a href="javascript:;">
+					<i class="icon-cogs"></i> 
+					<span class="title">Ajax 示例页面2</span>
+					<span class="selected"></span>
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a class="ajaxify" href="layout_ajax_content_2.html">
+							Ajax 示例链接 1                  
+							</a>
+						</li>
+						<li>
+							<a class="ajaxify" href="layout_ajax_content_3.html">
+							Ajax 示例链接 2                    
+							</a>
+						</li>
+						<li>
+							<a class="ajaxify" href="layout_ajax_content_2.html">
+							Ajax 示例链接 3                    
+							</a>
+						</li>
+						<li>
+							<a class="ajaxify" href="layout_ajax_content_3.html">
+							Ajax 示例链接 4                    
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="last">
+					<a href="javascript:;">
+					<i class="icon-cogs"></i> 
+					<span class="title">Ajax 示例页面3</span>
+					<span class="selected"></span>
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a class="ajaxify" href="layout_ajax_content_2.html">
+							Ajax 示例链接 1                    
+							</a>
+						</li>
+						<li>
+							<a class="ajaxify" href="layout_ajax_content_3.html">
+							Ajax 示例链接 2                    
+							</a>
+						</li>
+						<li>
+							<a class="ajaxify" href="layout_ajax_content_2.html">
+							Ajax 示例链接 3                    
+							</a>
+						</li>
+						<li>
+							<a class="ajaxify" href="layout_ajax_content_3.html">
+							Ajax 示例链接 4                    
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<!-- END SIDEBAR MENU1 -->
+		</div>
+		<!-- END SIDEBAR1 -->
+		<!-- BEGIN PAGE -->
+		<div class="page-content">
+			<!-- BEGIN PAGE CONTAINER-->
+			<div class="container-fluid">
+				<!-- BEGIN STYLE CUSTOMIZER -->
+				<div class="color-panel hidden-phone">
+					<div class="color-mode-icons icon-color"></div>
+					<div class="color-mode-icons icon-color-close"></div>
+					<div class="color-mode">
+						<p>主题颜色</p>
+						<ul class="inline">
+							<li class="color-black current color-default" data-style="default"></li>
+							<li class="color-blue" data-style="blue"></li>
+							<li class="color-brown" data-style="brown"></li>
+							<li class="color-purple" data-style="purple"></li>
+							<li class="color-grey" data-style="grey"></li>
+							<li class="color-white color-light" data-style="light"></li>
+						</ul>
+						<label>
+							<span>布局</span>
+							<select class="layout-option m-wrap small">
+								<option value="fluid" selected>响应式</option>
+								<option value="boxed">固定宽度</option>
+							</select>
+						</label>
+						<label>
+							<span>页头</span>
+							<select class="header-option m-wrap small">
+								<option value="fixed" selected>始终显示</option>
+								<option value="default">默认</option>
+							</select>
+						</label>
+						<label>
+							<span>侧边栏</span>
+							<select class="sidebar-option m-wrap small">
+								<option value="fixed">始终显示</option>
+								<option value="default" selected>默认</option>
+							</select>
+						</label>
+						<label>
+							<span>页脚</span>
+							<select class="footer-option m-wrap small">
+								<option value="fixed">始终显示</option>
+								<option value="default" selected>默认</option>
+							</select>
+						</label>
+					</div>
+				</div>
+				<!-- END BEGIN STYLE CUSTOMIZER -->
+				<div class="page-content-body"></div>
+			</div>
+			<!-- HERE WILL BE LOADED AN AJAX CONTENT -->
+		</div>
+		<!-- BEGIN PAGE -->     
+	</div>
+	<!-- END CONTAINER -->
+	<!-- BEGIN FOOTER -->
+	<div class="footer">
+		<div class="footer-inner">
+			2013 &copy; WEB前端开发部
+		</div>
+		<div class="footer-tools">
+			<span class="go-top">
+			<i class="icon-angle-up"></i>
+			</span>
+		</div>
+	</div>
+	<!-- END FOOTER -->
+	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+	<!-- BEGIN CORE PLUGINS -->   <script src="assets/plugins/jquery-1.10.1.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+	<script src="assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js" type="text/javascript" ></script>
+	<!--[if lt IE 9]>
+	<script src="assets/plugins/excanvas.min.js"></script>
+	<script src="assets/plugins/respond.min.js"></script>  
+	<![endif]-->   
+	<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery.blockui.min.js" type="text/javascript"></script>  
+	<script src="assets/plugins/jquery.cookie.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript" ></script>
+	<!-- END CORE PLUGINS -->
+	<script type="text/javascript" src="assets/plugins/select2/select2.min.js"></script>
+	<script src="assets/scripts/app.js"></script>      
+	<script>
+		jQuery(document).ready(function() {    
+		   App.init();
+		   $('.page-sidebar .ajaxify.start').click() // load the content for the dashboard page.
+		});
+	</script>
+	<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

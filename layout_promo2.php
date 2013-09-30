@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+	<meta charset="utf-8" />
+	<title>PHP个人工作台 | 介绍</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+	<link href="assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/style-metro.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+	<link href="assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+	<!-- END GLOBAL MANDATORY STYLES -->
+	<link href="assets/css/pages/promo.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/pages/promo2.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- BEGIN CORE PLUGINS -->   <script src="assets/plugins/jquery-1.10.1.min.js" type="text/javascript"></script>
+	<style>
+	.btn{
+	/*display:none;*/
+	}
+	</style>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-full-width">
+	<!-- BEGIN CONTAINER -->   
+	<div class="page-container row-fluid">
+
+		<!-- BEGIN PAGE -->
+		<div class="page-content no-min-height">
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<!-- BEGIN PAGE CONTAINER-->
+			<div class="container-fluid promo-page">
+				<!-- BEGIN PAGE CONTENT-->
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="block-grey">
+							<div class="container">
+								<div id="promo_carousel" class="carousel slide">
+									<div class="carousel-inner">
+										<div class="active item">
+											<div class="row-fluid">
+												<div class="span7 margin-bottom-20 margin-top-20 animated rotateInUpRight">
+													<h1>慧聪网个人工作平台</h1>
+													<ul>
+														<li>消息通知</li>
+														<li>快捷收藏</li>
+														<li>个人事务管理、MIS任务、邮件管理</li>
+														<li>项目知识库、技术问答</li>
+														<li>个人知识库</li>
+														<li>聊天互动、经验分享</li>
+													</UL>
+													<p>消息通知、博客、日程安排、留言板、文件管理、里程碑管理、微博、相册、调查、任务、Wiki</p>
+													<a href="#" class="btn red big xlarge">
+													开始使用
+													<i class="m-icon-big-swapright m-icon-white"></i>                                
+													</a>
+												</div>
+												<div class="span5 animated rotateInDownLeft">
+													<a href="#"><img src="assets/img/pages/img1.png" alt=""></a>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="row-fluid">
+												<div class="span5 animated rotateInUpRight">
+													<a href="#"><img src="assets/img/pages/img1_2.png" alt=""></a>
+												</div>
+												<div class="span7 margin-bottom-20 animated rotateInDownLeft">
+													<h1>慧聪网个人工作平台</h1>
+													<ul>
+														<li>跨平台融合、PC、Mac、Mobile、App、WEBApp、……</li>
+														<li>跨浏览器（IE8+、FF、chrome、Safari、安全360、傲游、……）</li>
+														<li>跨设备（iPhone、ipad、andriod、……）</li>
+														<li>跨分辨率（240px - 1920px）</li>
+													</UL>
+													<p>一个婴儿初次睁开眼睛，这个世界的光第一次映到他的眼睛里，在白纸般的心灵上留下最初的印象。也许是一棵树，或一座带外置楼梯的房屋，或几个戴草帽的孩童，或漫天的大雪。当时他并不可能知道所看见的是什么。多少年后他一度以为了解了这个世界，但有一天，他发现自己一无所知。</p>
+													<a href="#" class="btn green big xlarge">
+													立即体验
+													<i class="m-icon-big-swapright m-icon-white"></i>                                
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<a class="carousel-control left" href="#promo_carousel" data-slide="prev">
+									<i class="m-icon-big-swapleft m-icon-white"></i>
+									</a>
+									<a class="carousel-control right" href="#promo_carousel" data-slide="next">
+									<i class="m-icon-big-swapright m-icon-white"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="block-yellow">
+							<div class="container">
+								<div class="row-fluid">
+									<div class="span5 margin-bottom-20">
+										<a href="#"><img src="assets/img/pages/img2.png" alt=""></a>
+									</div>
+									<div class="span7">
+										<h2>知识管理储藏分享中心</h2>
+										<p>人人贡献、人人分享</p>
+										<p>很多时候我们不可能随时找到自己所需要的知识，而必须将它事前“储藏”起来。”</p>
+										<p>将多数人的知识有效分享，“积累的各门类的知识越完整越好，越“成套”越好”，所以，“对各类知识不论需求兼收并蓄。”</p>
+										<p>各类信息的收集方便，各种信息更新快速。</p>
+										<p>合理的知识结构，用于信息的分类与筛选，除尽量排除垃圾信息的干扰外，可有可无的信息亦应直接删除，对于有价值的信息可以建立一个专门的存放之所</p>
+										<a href="#" class="btn blue big xlarge">
+										了解详情
+										<i class="m-icon-big-swapright m-icon-white"></i>                                
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block-transparent">
+							<div class="container">
+								<div class="row-fluid margin-bottom-20">
+									<div class="span6 margin-bottom-20">
+										<h2>会议室预约</h2>
+										<p>与MIS会议室预定系统，无缝结合。</p>
+										<p>想要预约的人，可以通过终端看到哪些时段已被什么部门占用。</p>
+										<p>会议室预定计划、定时预定。</p>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<a href="#"><img src="assets/img/promo/会议室预定.png" alt=""></a>
+									</div>
+								</div>
+								<hr/>
+								<div class="row-fluid">
+									<div class="span6">
+										<a href="#"><img src="assets/img/promo/记事本.jpg" alt=""></a>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<h2>便笺、记事本</h2>
+										<p>在线、离线记事本，记录生活、工作、学习笔记、手机在线浏览、导入导出</p>
+										<p>手机在线浏览、随时随地使用</p>
+										
+									</div>
+								</div>
+								<hr/>
+								<div class="row-fluid margin-bottom-20">
+									<div class="span6 margin-bottom-20">
+										<h2>日历</h2>
+										<p>从工作台轻松管理日常工作中的各种重要事项。用户可轻松添加活动和发送邀请，并搜索您感兴趣的活动。</p>
+										<p>按日、按周或按月查看</p>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<a href="#"><img src="assets/img/promo/日历.jpg" alt=""></a>
+									</div>
+								</div>
+								<hr/>
+								<div class="row-fluid ">
+									<div class="span6">
+										<a href="#"><img src="assets/img/promo/加班.jpg" alt=""></a>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<h2>加班、倒休、请假申请</h2>
+										<p>MIS影子系统</p>
+										<p>管理加班、倒休、请假</p>
+									</div>
+								</div>
+								<hr/>
+								<div class="row-fluid margin-bottom-20">
+									<div class="span6 margin-bottom-20">
+										<h2>组织结构通讯录</h2>
+										<p>IM影子系统</p>
+										<p>组织结构查询、筛选、分组导出邮件</p>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<a href="#"><img src="assets/img/promo/组织结构.jpg" alt=""></a>
+									</div>
+								</div>
+								<hr/>
+								<div class="row-fluid">
+									<div class="span6">
+										<a href="#"><img src="assets/img/promo/消息.png" alt=""></a>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<h2>信息平台（提醒、通知、消息）</h2>
+										<p>个人事务、新BUG、定时任务、聊天对话、……</p>
+									</div>
+								</div>
+								<hr/>
+								<div class="row-fluid margin-bottom-20">
+									<div class="span6 margin-bottom-20">
+										<h2>邮箱</h2>
+										<p>发送接收工作邮件</p>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<a href="#"><img src="assets/img/promo/邮箱.jpg" alt=""></a>
+									</div>
+								</div>
+								<hr/>
+								<div class="row-fluid">
+									<div class="span6">
+										<a href="#"><img src="assets/img/promo/聊天.png" alt=""></a>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<h2>聊天对话</h2>
+										<p>IM影子系统</p>
+										<p>集成im接口，在线即时沟通</p>
+									</div>
+								</div>
+								<hr/>
+								<div class="row-fluid margin-bottom-20">
+									<div class="span6 margin-bottom-20">
+										<h2>性能监控、趋势分析</h2>
+										<p>描述</p>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<a href="#"><img src="assets/img/promo/趋势.png" alt=""></a>
+									</div>
+								</div>
+								<hr/>
+								<div class="row-fluid">
+									<div class="span6">
+										<a href="#"><img src="assets/img/promo/团队.jpg" alt=""></a>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<h2>团队协作</h2>
+										<p>描述</p>
+									</div>
+								</div>
+								<hr/>
+								<div class="row-fluid margin-bottom-20">
+									<div class="span6 margin-bottom-20">
+										<h2>标题</h2>
+										<p>描述</p>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<a href="#"><img src="assets/img/pages/img3.png" alt=""></a>
+									</div>
+								</div>
+								<hr/>
+								<div class="row-fluid">
+									<div class="span6">
+										<a href="#"><img src="assets/img/promo/任务.png" alt=""></a>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<h2>任务</h2>
+										<p>描述</p>
+									</div>
+								</div>
+								<hr/>
+								<div class="row-fluid margin-bottom-20">
+									<div class="span6 margin-bottom-20">
+										<h2>标题</h2>
+										<p>描述</p>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<a href="#"><img src="assets/img/pages/img3.png" alt=""></a>
+									</div>
+								</div>
+								<hr/>
+								<div class="row-fluid">
+									<div class="span6">
+										<a href="#"><img src="assets/img/pages/img4.png" alt=""></a>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<h2>极速设计、光速开发，上线只需弹指间</h2>
+										<p>一个黄昏，我从房中走出，登上高台，我看见那赤红的太阳它收敛了耀眼的光环，只剩下那最纯正浓郁的色彩。空中别无一物，我注视它，感到面对一切沧桑的见证。它曾默默看过地球的诞生。在这注视下，最原始浑浊的大气开始澄清，万物浮上海面。</p>
+										<p>不，它真的注视过吗？</p>
+									</div>
+								</div>
+								<hr>
+								<div class="row-fluid margin-bottom-20">
+									<div class="span6 margin-bottom-20">
+										<h2>无缝融合windows8</h2>
+										<p>就在被视为宁静的这一刻，一颗穿过天鹅星座的行星已走了万里的旅程；地球上又有千万生命走到了终点而产房又多了啼哭声，有几场战争爆发又有几百物种从这个星球上消失；银河系，几亿颗恒星在这一刻死去坍缩，亿的几十次方的物质被抛出来丶重组，也许形成新的土壤丶新的元素丶新的千万生灵。</p>
+										<p>微未之中可容纳无限，一瞬之间可体现永恒。</p>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<a href="#"><img src="assets/img/pages/img3.png" alt=""></a>
+									</div>
+								</div>
+								<hr/>
+								<div class="row-fluid">
+									<div class="span6">
+										<a href="#"><img src="assets/img/pages/img4.png" alt=""></a>
+									</div>
+									<div class="span6 margin-bottom-20">
+										<h2>极速设计、光速开发，上线只需弹指间</h2>
+										<p>一个黄昏，我从房中走出，登上高台，我看见那赤红的太阳它收敛了耀眼的光环，只剩下那最纯正浓郁的色彩。空中别无一物，我注视它，感到面对一切沧桑的见证。它曾默默看过地球的诞生。在这注视下，最原始浑浊的大气开始澄清，万物浮上海面。</p>
+										<p>不，它真的注视过吗？</p>
+									</div>
+								</div>
+								<hr>
+								<div class="row-fluid">
+									<div class="span3">
+										<h3><a href="#">8种主流布局</a></h3>
+										<p>我对自己的生命感到喜悦了。在欣欣向荣万物复苏的原野，人们向创造之神献祗：“我们献祭我们的语言丶泪水丶智慧。你赐予光，还给我们火焰丶空气丶奇迹与力。请带走我的虔诚，不要用死亡毁灭我们。”</p>
+									</div>
+									<div class="span3">
+										<h3><a href="#">25套成熟组件</a></h3>
+										<p>可天地默不发一言，人类看到痛苦丶坎坷丶灾难如星球阴影轮转般投射到大地上来。家园的大火燃烧在紫色的天穹上，洪水从高原上漫卷而来，战士的长矛剌入文明的胸膛。人类开始感到迷惘，他们其实是被流放在这个星球上的弃儿。</p>
+									</div>
+									<div class="span3">
+										<h3><a href="#">500个智能交互</a></h3>
+										<p>从未有其他声音告诉人类宇宙的真相。</p>
+									</div>
+									<div class="span3">
+										<h3><a href="#">无限 创意动力</a></h3>
+										<p>众生开始试图自己解释命运。</p>
+									</div>
+								</div>
+								
+								<hr/>
+								<?php include 'assets/plugins/Leavord_v3.1/proposal.php'; ?>
+								<hr/>
+								
+								
+							</div>
+						</div>
+                        
+                        
+                        
+                        
+					</div>
+				</div>
+			</div>
+			<!-- END PAGE CONTENT-->
+            
+            
+            
+            
+		</div>
+		<!-- END PAGE CONTAINER--> 
+        
+        
+        
+        
+	</div>
+	<!-- END PAGE --> 
+	<!-- END CONTAINER -->
+    
+    
+    
+    
+	<!-- BEGIN FOOTER1 -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-inner">
+				2013 &copy; WEB前端开发部
+			</div>
+			<div class="footer-tools">
+				<span class="go-top">
+				<i class="icon-angle-up"></i>
+				</span>
+			</div>
+		</div>
+	</div>
+	<!-- END FOOTER -->
+	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+	
+	<script src="assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+	<script src="assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js" type="text/javascript" ></script>
+	<!--[if lt IE 9]>
+	<script src="assets/plugins/excanvas.min.js"></script>
+	<script src="assets/plugins/respond.min.js"></script>  
+	<![endif]-->   
+	<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery.blockui.min.js" type="text/javascript"></script>  
+	<script src="assets/plugins/jquery.cookie.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript" ></script>
+	<!-- END CORE PLUGINS -->
+	<script src="assets/scripts/app.js"></script>      
+	<script>
+		jQuery(document).ready(function() {    
+		   App.init();
+		   jQuery('#promo_carousel').carousel({
+		      interval: 10000,
+		      pause: 'hover'
+		   });
+		});
+	</script>
+	<!-- END JAVASCRIPTS -->
+    
+    
+    
+</body>
+<!-- END BODY -->
+</html>

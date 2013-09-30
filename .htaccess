@@ -1,0 +1,4 @@
+# 将 RewriteEngine 模式打开
+RewriteEngine On
+# Rewrite
+RewriteRule layout_promo2.html$ layout_promo2.php
