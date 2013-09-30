@@ -1,0 +1,5 @@
+# 将 RewriteEngine 模式打开
+RewriteEngine On
+# Rewrite
+RewriteRule index.html$ index.php
+RewriteRule post$ post.php
